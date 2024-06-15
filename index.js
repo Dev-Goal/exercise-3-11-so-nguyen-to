@@ -10,22 +10,21 @@ checkNT(number);
 function checkNT(number) {
   let count = 0;
   let countSNT = 0;
-  for (let n = 2; n < 1000; n++) {
+  for (let i = 2; i < 1000; i++) {
     if (countSNT < number) {
-      for (let j = 1; j <= n; j++) {
-        if (n % j == 0) {
+      for (let j = 1; j <= i; j++) {
+        if (i % j == 0) {
           count += 1;
         }
       }
       if (count == 2) {
-        document.write(n + "<br>");
+        document.write(i + "<br>");
         countSNT += 1;
       }
       count = 0;
     } else {
-        document.write("Tổng số nguyên tố hiển thị là " + countSNT);
-        break;
+      document.write("Tổng số nguyên tố hiển thị là " + countSNT);
+      break;
     }
   }
 }
-
