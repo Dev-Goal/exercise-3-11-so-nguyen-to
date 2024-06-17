@@ -28,3 +28,18 @@ function checkNT(number) {
     }
   }
 }
+// while (true) {
+//   let number = Number(prompt("Hãy nhập vào số lượng SNT mà bạn muốn hiển thị"));
+//   let isPrime = true;
+//   for (let i = 2; i < number; i++) {
+//     if (number % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) {
+//     alert(number + " là số nguyên tố");
+//   } else {
+//     alert(number + " không phải là số nguyên tố");
+//   }
+// }
